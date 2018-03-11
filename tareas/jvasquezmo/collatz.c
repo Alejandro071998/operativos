@@ -20,7 +20,7 @@ Para ejecutar:
 void collatz(int n);
 
 int main(int argc, char *argv[]) {
-  int num, termino;
+  int num;
   if(argc != 2 || (num = atoi(argv[1])) <= 0){
     printf("Argumentos incorrectos.\n");
     return -1;
