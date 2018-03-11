@@ -12,7 +12,7 @@ int main(int num, char* argc[]){
     pid = fork();
 
     if (pid < 0){
-      perror("Error en la llamada a fork().");
+      perror("Error calling fork().");
       return -1;
     }
 
@@ -33,12 +33,12 @@ int main(int num, char* argc[]){
 
     else{
       wait(NULL);
-      printf("\n\nYa el proceso hijo terminó. Este es el proceso PADRE\n");
+      printf("\nChild process has finished. This is the FATHER process\n");
     }
   }
   else{ 
-    printf("Any argment was passed when the program was called");
+    printf("No arguments were added when the program was called");
   }
-  
+
   return 0;
 }
